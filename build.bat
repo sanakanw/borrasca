@@ -1,0 +1,2 @@
+if "%~1" NEQ "--no-build" cl -DGLEW_STATIC -D_HAS_EXCEPTIONS=0 /MTd /MP /Fo./bin/win64/obj\ /Febin/win64/game -I./lib/include opengl32.lib shell32.lib gdi32.lib user32.lib ./lib/lib/x64/*.lib src/*.cpp /link /NODEFAULTLIB:MSVCRTD.lib /NODEFAULTLIB:LIBCMT.lib
+"bin/win64/game.exe"
